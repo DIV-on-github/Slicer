@@ -36,7 +36,7 @@ Location, size, and shape of initial segments and content of master volume are t
 Final segment boundaries will be placed where master volume brightness changes abruptly. Instructions:<p>
 <ul style="margin: 0">
 <li>Use Paint or other offects to draw seeds in each region that should belong to a separate segment.
-Paint each seed with a different segment. Minimum two segments are required.</li>
+Paint each seed with a different segment. Minimum two visible segments are required.</li>
 <li>Click <dfn>Initialize</dfn> to compute preview of full segmentation.</li>
 <li>Browse through image slices. If previewed segmentation result is not correct then switch to
 Paint or other effects and add more seeds in the misclassified region. Full segmentation will be
