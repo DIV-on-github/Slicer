@@ -52,9 +52,10 @@ If segments overlap, segment higher in the segments table will have priority. <b
     self.kernelSizeMMSpinBox.minimum = 0.0
     self.kernelSizeMMSpinBox.value = 3.0
     self.kernelSizeMMSpinBox.singleStep = 1.0
+    self.kernelSizeMMSpinBox.pageStep = 2.0
 
     self.kernelSizePixel = qt.QLabel()
-    self.kernelSizePixel.setToolTip("Diameter of the neighborhood in pixel. Computed from the segment's spacing and the specified kernel size.")
+    self.kernelSizePixel.setToolTip("Diameter of the neighborhood in pixels. Computed from the segment's spacing and the specified kernel size.")
 
     kernelSizeFrame = qt.QHBoxLayout()
     kernelSizeFrame.addWidget(self.kernelSizeMMSpinBox)
@@ -67,6 +68,7 @@ If segments overlap, segment higher in the segments table will have priority. <b
     self.gaussianStandardDeviationMMSpinBox.quantity = "length"
     self.gaussianStandardDeviationMMSpinBox.value = 3.0
     self.gaussianStandardDeviationMMSpinBox.singleStep = 1.0
+    self.gaussianStandardDeviationMMSpinBox.pageStep = 2.0
     self.gaussianStandardDeviationMMLabel = self.scriptedEffect.addLabeledOptionsWidget("Standard deviation:", self.gaussianStandardDeviationMMSpinBox)
 
     self.jointTaubinSmoothingFactorSlider = ctk.ctkSliderWidget()
@@ -74,8 +76,8 @@ If segments overlap, segment higher in the segments table will have priority. <b
     self.jointTaubinSmoothingFactorSlider.minimum = 0.01
     self.jointTaubinSmoothingFactorSlider.maximum = 1.0
     self.jointTaubinSmoothingFactorSlider.value = 0.5
-    self.jointTaubinSmoothingFactorSlider.singleStep = 0.01
-    self.jointTaubinSmoothingFactorSlider.pageStep = 0.1
+    self.jointTaubinSmoothingFactorSlider.singleStep = 0.05
+    self.jointTaubinSmoothingFactorSlider.pageStep = 0.10
     self.jointTaubinSmoothingFactorLabel = self.scriptedEffect.addLabeledOptionsWidget("Smoothing factor:", self.jointTaubinSmoothingFactorSlider)
 
     self.applyToAllVisibleSegmentsCheckBox = qt.QCheckBox()
