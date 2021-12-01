@@ -94,7 +94,7 @@
     </layout>
    </item>
    <item row="2" column="0">
-    <widget class="QLabel" name="DestinationFoldeLabel">
+    <widget class="QLabel" name="DestinationFolderLabel">
      <property name="text">
       <string>Destination folder: </string>
      </property>
