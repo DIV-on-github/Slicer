@@ -51,13 +51,13 @@ class SegmentEditorIslandsEffect(AbstractScriptedSegmentEditorEffect):
 
     self.removeSelectedOptionRadioButton = qt.QRadioButton("Remove selected island")
     self.removeSelectedOptionRadioButton.setToolTip(
-      "Click on an island to remove it from selected segment.")
+      "Click on an island in a slice viewer to remove it from selected segment.")
     self.operationRadioButtons.append(self.removeSelectedOptionRadioButton)
     self.widgetToOperationNameMap[self.removeSelectedOptionRadioButton] = REMOVE_SELECTED_ISLAND
 
     self.addSelectedOptionRadioButton = qt.QRadioButton("Add selected island")
     self.addSelectedOptionRadioButton.setToolTip(
-      "Click on a region to add it to selected segment.")
+      "Click on an island in a slice viewer to add it to selected segment.")
     self.operationRadioButtons.append(self.addSelectedOptionRadioButton)
     self.widgetToOperationNameMap[self.addSelectedOptionRadioButton] = ADD_SELECTED_ISLAND
 
