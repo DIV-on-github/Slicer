@@ -33,7 +33,7 @@
      <item>
       <widget class="QLabel" name="RestartRequestedLabel">
        <property name="text">
-        <string>&lt;font color=&quot;red&quot;&gt;* Restart requested&lt;/font&gt;</string>
+        <string>&lt;font color=&quot;red&quot;&gt;* Restart of application is requested&lt;/font&gt;</string>
        </property>
       </widget>
      </item>
